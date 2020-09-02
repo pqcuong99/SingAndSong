@@ -173,7 +173,7 @@ public class Fragment_Playsong extends Fragment {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
+                Log.d("TAG", "onStartTrackingTouch: ");
             }
 
             @Override
