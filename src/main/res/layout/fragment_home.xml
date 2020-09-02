@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <LinearLayout
+        android:id="@+id/header"
+        android:background="@color/colorBlue"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <Button
+            android:onClick="openMainActivity"
+            android:id="@+id/mymusic"
+            android:textColor="@color/colorBlue"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Của tôi"
+            android:textSize="26sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/onlinemusic"
+            android:textColor="@color/colorRed"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Online"
+            android:textSize="26sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_toLeftOf="@id/imgsearch"
+        android:id="@+id/txtsearch"
+        android:layout_marginTop="70dp"
+        android:background="#E6E6E6"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:hint="Nhập tên bài hát cần tìm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:id="@+id/imgsearch"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/search64"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <ListView
+        android:id="@+id/listsearch"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtsearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

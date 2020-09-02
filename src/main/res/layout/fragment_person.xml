@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_weight="5"
+                android:id="@+id/dangnhap"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgbacklai"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/avatar"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="-58dp"
+                    android:layout_marginEnd="369dp"
+                    android:layout_marginRight="300dp"
+                    android:src="@drawable/ic_assignment_return_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/avatar"
+                    android:id="@+id/hello"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="Đăng nhập để trải nghiệm nghe nhạc tuyệt vời nhất"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="My Music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/baihat"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ambum"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="26sp"
+                    android:text="Bài hát"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
